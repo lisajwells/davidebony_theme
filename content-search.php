@@ -7,7 +7,12 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
 	<header class="entry-header">
-		<h1 class="entry-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
+
+		<?php if ($post->post_type == "shop_item") { ?>
+			<h1 class="entry-title"><a href="<?php the_permalink(); ?>">Title: <?php the_title(); ?></a></h1>
+		<?php } else { ?>
+			<h1 class="entry-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
+		<?php } ?>
 		<?php if ( 'page' != $post->post_type ) : ?>
 			<div class="entry-meta">
 				<?php echo get_the_date(); ?>
