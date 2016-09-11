@@ -15,7 +15,7 @@
 
 	<div class="shop-info">
 		<h4>Title: <?php the_title(); ?></h4>
-		<h4><?php the_field('creator_type'); ?>: <?php the_field('creator'); ?></h4>
+		<h4><?php the_field('creator_type'); ?>: <?php the_field('creator_name'); ?></h4>
 		<p><?php the_field('item_info'); ?></p>
 		<p><?php the_field('price'); ?></p>
 		<p><?php the_field('materials'); ?></p>
