@@ -60,10 +60,23 @@
 				<p><?php the_field('materials'); ?></p>
 			</div>
 		<?php }?>
-		<?php
+		<?php //conditional show only if price is there.
+		if ( get_field('price') ) {?>
+			<div class="price">
+				<p><?php the_field('price'); ?></p>
+			</div>
+		<?php }?>
+		<!--   Conditional Statement -->
+		<?php if ($post->post_type == "shop_item") {
+			$paypal = get_field('paypal_code');
+
 			if( get_field('sold_out') )	{
 			    echo "<p>SOLD OUT</p>";
-		}?>
+			} else {
+			    echo "<p><a href='#'>BUY</a></p>";
+			    echo $paypal;
+			}
+		} ?>
 
 
 		<!-- the_content( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'portfolio-press' ) );  -->
