@@ -126,7 +126,7 @@ function cf_search_distinct( $where ) {
 add_filter( 'posts_distinct', 'cf_search_distinct' );
 
 // https://www.webhostinghero.com/how-to-get-the-most-recent-permalink-in-wordpress/
-function get_latest_guest_link(){
+function davidebony_get_latest_guest_link(){
     global $post;
     $placeholder = $post;
     $args = array(

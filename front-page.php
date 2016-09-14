@@ -1,7 +1,7 @@
 <?php get_header();
 
 
-$latest_guest = get_latest_guest_link();
+$latest_guest = davidebony_get_latest_guest_link();
 ?>
 
     <div class="border-top"></div>
