@@ -9,7 +9,7 @@ License: GNU General Public License
 License URI: license.txt
 Tags: two-columns, left-sidebar, right-sidebar, flexible-width, custom-menu, full-width-template, microformats, post-formats, rtl-language-support, theme-options, translation-ready
 Text Domain: portfolio-press
-Domain Path: /languages 
+Domain Path: /languages
 Template: portfolio-press
 */
 
@@ -65,7 +65,8 @@ body {
     margin-right: -12px;
   }
 
-  .single-film_music .primary-navigation ul li.current-menu-item > a, .primary-navigation ul > li:hover > a {
+  .single-film_music .primary-navigation ul li.current-menu-item > a, .primary-navigation ul > li:hover > a,
+  .primary-navigation ul li.current_page_parent > a, .primary-navigation ul > li:hover > a {
     border-radius: 2px;
     color: #fff;
     background: rgba(255, 255, 255, 0.25);
@@ -151,7 +152,7 @@ a {
     height: 1px;
     background: #ddd;
     box-shadow: 0 1px 0 0 #fff;
-    content: ""; 
+    content: "";
 }
 
 
@@ -296,7 +297,7 @@ footer.entry-meta:before {
 }
 
 #colophon {
-  border-top: none; 
+  border-top: none;
 }
 
 #colophon .block.footer-widget-1,
@@ -463,7 +464,7 @@ a:active .bot-right {
   background: black url(images/band-small-top-bot.png) repeat-x;
   z-index: 100;
 }
- 
+
 .border-left {
   position: fixed;
   width: 20px;
@@ -473,7 +474,7 @@ a:active .bot-right {
   background: black url(images/band-small-left.png) repeat-y;
   z-index: 50;
 }
- 
+
 .border-right {
   position: fixed;
   width: 20px;

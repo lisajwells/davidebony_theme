@@ -146,7 +146,6 @@ function davidebony_get_latest_guest_link(){
     // return $latest_link_html;
 }
 
-// Mark (highlight) regular blog post type parent (archive) as active item in Wordpress Navigation
 // Mark (highlight) custom post type parent (archive) as active item in Wordpress Navigation
   add_action('nav_menu_css_class', 'add_current_nav_class', 10, 2 );
 
@@ -160,7 +159,7 @@ function davidebony_get_latest_guest_link(){
 
         // Checking if post ID exist...
         if (isset( $id )){
-                        // Getting the post type of the current post
+            // Getting the post type of the current post
             $current_post_type = get_post_type_object(get_post_type($post->ID));
             $current_post_type_slug = $current_post_type->rewrite['slug'];
 
