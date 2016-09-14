@@ -1,6 +1,6 @@
 <?php
 /**
- * Template for displaying a single guest artist
+ * Template for displaying a single post
  *
  * @package Portfolio Press
  */
@@ -27,15 +27,20 @@ get_header(); ?>
 						<?php wp_link_pages( array( 'before' => '<div class="page-link">' . __( 'Pages:', 'portfolio-press' ), 'after' => '</div>' ) ); ?>
 					</div><!-- .entry-content -->
 
-					<?php portfoliopress_footer_meta( $post ); ?>
+					<?php //portfoliopress_footer_meta( $post ); ?>
 
 				</article><!-- #post-<?php the_ID(); ?> -->
 
 				<?php portfoliopress_post_nav(); ?>
+
+				<?php if ( comments_open() ) {
+					comments_template( '', true );
+                } ?>
 
 			<?php endwhile; // end of the loop. ?>
 
 			</div><!-- #content -->
 		</div><!-- #primary -->
 
+<?php get_sidebar(); ?>
 <?php get_footer(); ?>

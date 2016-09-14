@@ -84,6 +84,6 @@
 		<?php wp_link_pages( array( 'before' => '<div class="page-link">' . __( 'Pages:', 'portfolio-press' ), 'after' => '</div>' ) ); ?>
 	</div><!-- .entry-content -->
 
-	<?php portfoliopress_footer_meta2( $post ); ?>
+	<?php //portfoliopress_footer_meta2( $post ); ?>
 
 </article><!-- #post-<?php the_ID(); ?> -->

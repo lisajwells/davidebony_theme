@@ -24,8 +24,9 @@ body {
 /* ______ branding ______ */
 #branding {
   background: #787E84;
+  background: #6E8FAF;
+  background: #7891A9;
 }
-
 @media (min-width: 768px) {
   #branding .col-width {
       padding: 0 40px;
@@ -43,7 +44,7 @@ body {
   padding: 0 8px;
   margin-left: -8px;
 }
-#logo #site-title a:focus, a:hover, a:active {
+#logo #site-title a:focus, a:hover, a:active, {
   background: rgba(255, 255, 255, 0.25);
 }
 
@@ -61,14 +62,23 @@ body {
 @media screen and (min-width: 780px) {
   .primary-navigation {
     margin-top: 4px;
+    margin-right: -12px;
   }
+
+  .single-film_music .primary-navigation ul li.current-menu-item > a, .primary-navigation ul > li:hover > a {
+    border-radius: 2px;
+    color: #fff;
+    background: rgba(255, 255, 255, 0.25);
+    transition: 0.07s ease-in;
 }
 
 @media screen and (max-width: 779px) {
   .clear-menu .menu-toggle {
-      position: absolute;
-      top: 45px;
-      right: 20px;
+    position: absolute;
+    top: 45px;
+    right: 20px;
+    color: #fff;
+    font-size: 18px;
   }
 
   .primary-navigation .nav-menu {
@@ -82,7 +92,6 @@ body {
 
 /* ______ main ______ */
 #main {
-  background: #F7F4F3;
   background: #FBFAF9;
 }
 
@@ -127,21 +136,70 @@ a {
   letter-spacing: .0001em;
 }
 
+
+
 /* ______ art & writing ______ */
-/*#content article {
-  padding: 0;
+.blog #content article {
+    margin-bottom: 60px;
+}
+.blog #content p {
+  padding-bottom: 50px;
+}
+.blog #content article:after {
+     display: block;
+    width: 100%;
+    height: 1px;
+    background: #ddd;
+    box-shadow: 0 1px 0 0 #fff;
+    content: ""; 
+}
+
+
+/*footer.entry-meta:after {
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: #ddd;
+    box-shadow: 0 1px 0 0 #fff;
+    content: "";
+}
+footer.entry-meta:before {
+    display: none;
 }*/
 
 
+
+/* ______ guest artist ______ */
+.single-guest_artist #main{
+  background: #fff;
+}
+.single-guest_artist #colophon{
+  background: #FBFAF9;
+}
+.single-guest_artist #content {
+  width: 100%;
+}
+.single-guest_artist h1 {
+  color: #525151;
+}
+.single-guest_artist #content p{
+  width: 75%;
+}
+.single-guest_artist .footer-widget-1 .widget-container h3{
+  display: none;
+}
+.single-guest_artist .widget-container .textwidget {
+  background: gray;
+}
+
+.single-guest_artist .search-field {
+  max-width: 216px;
+}
+
+
+
+
 /* ______ shop ______ */
-.post-type-archive-shop_item #content article {
-
-}
-#content article:last-child {
-    border-bottom: none;
-    padding-bottom: 0;
-}
-
 .post-type-archive-shop_item #content {
   width: 100%;
   float: none;
@@ -150,9 +208,18 @@ a {
   background: white;
   padding: 40px;
 }
-.post-type-archive-shop_item p {
-  background: white;
+
+#content article:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
 }
+.post-type-archive-shop_item h4 {
+  font-family: 'Crimson Text', serif;
+}
+.post-type-archive-shop_item .search-field {
+  max-width: 216px;
+}
+
 
 
 @media (min-width: 768px) {
@@ -172,9 +239,30 @@ a {
   .post-type-archive-shop_item article div {
     text-align: center;
   }
+  .post-type-archive-shop_item article div img {
+    padding-bottom: 30px;
 
+  }
   .post-type-archive-shop_item article div:last-child {
     text-align: left;
+  }
+  .shop-info h4 {
+    font-family: 'Crimson Text', serif;
+    font-size: 16px;
+    margin-bottom: 0;
+  }
+  #content .shop-item .shop-info p:last-child {
+    color: red;
+  }
+}
+
+@media (max-width: 500px) {
+  .post-type-archive-shop_item article {
+    background: white;
+    padding: 20px;
+  }
+  .post-type-archive-shop_item article div img {
+    padding-bottom: 20px;
   }
 }
 
@@ -182,23 +270,67 @@ a {
 
 
 /* ______ sidebars ______ */
+#sidebar {
+  margin-top: 3px;
+}
+.widget-container {
+    margin-bottom: 40px;
+}
+
 #sidebar .widget-container h3 {
-  border-bottom: none;
   box-shadow: none;
+  box-shadow: 0 1px 0 0 #fff;
   border-bottom: 3px solid #DDD;
   color: #444;
+  margin-bottom: 14px;
 }
 
 .widget-container p {
   font-size: 15px;
+  margin-bottom: 10px;
 }
 
-
-
+.widget-container ul li {
+  font-size: 15px;
+  margin-bottom: 10px;
+}
 
 #colophon {
   border-top: none; 
 }
+
+#colophon .block.footer-widget-1,
+#colophon .block.footer-widget-2 {
+  width: 75%;
+}
+#colophon .block.footer-widget-1 .widget-container {
+  font-size: 16px;
+}
+
+
+
+
+/* ______ search results ______ */
+.search-results h1 {
+  font-size: 1.5em;
+  letter-spacing: .015em;
+  color: #7891A9;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* ______ footer ______ */
+/**, *:before, *:after {
+    box-sizing: content-box;
+}*/
 
 
 
