@@ -39,8 +39,12 @@ get_header(); ?>
 					<?php //portfoliopress_footer_meta( $post ); ?>
 
 				</article><!-- #post-<?php the_ID(); ?> -->
+					<?php //portfoliopress_post_nav(); ?>
 
-				<?php portfoliopress_post_nav(); ?>
+				<div class="prev-next-post">
+	 				<span><?php previous_post_link(); ?></span>
+					<span><?php next_post_link(); ?></span>
+				</div>
 
 				<?php if ( comments_open() ) {
 					comments_template( '', true );
