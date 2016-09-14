@@ -24,6 +24,15 @@ get_header(); ?>
 					<div class="entry-content">
 						<?php portfoliopress_display_image(); ?>
 						<?php the_content(); ?>
+						<?php //conditional show only if publication is there.
+							if ( get_field('publication') ) {?>
+
+								<div class="publication">
+									<h4>Published in <?php the_field('publication'); ?></h4>
+									<p><a href="<?php the_field('url_of_link') ?>" target="_blank">View article</a></p>
+								</div>
+						<?php }?>
+
 						<?php wp_link_pages( array( 'before' => '<div class="page-link">' . __( 'Pages:', 'portfolio-press' ), 'after' => '</div>' ) ); ?>
 					</div><!-- .entry-content -->
 
