@@ -15,7 +15,7 @@
 		<?php } ?>
 		<?php if ( 'page' != $post->post_type ) : ?>
 			<div class="entry-meta">
-				<?php echo get_the_date(); ?>
+				<?php //echo get_the_date(); ?>
 			</div><!-- .entry-meta -->
 		<?php endif; ?>
 	</header><!-- .entry-header -->
