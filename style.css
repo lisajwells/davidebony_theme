@@ -21,321 +21,6 @@ body {
 }
 
 
-/* ______ branding ______ */
-#branding {
-  background: #787E84;
-  background: #6E8FAF;
-  background: #7891A9;
-}
-@media (min-width: 768px) {
-  #branding .col-width {
-      padding: 0 40px;
-  }
-}
-
-#logo {
-  padding-right: 0;
-}
-#logo #site-title a {
-  font-family: 'Crimson Text', serif;
-  font-size: 30px;
-  line-height: 54px;
-  letter-spacing: .025em;
-  padding: 0 8px;
-  margin-left: -8px;
-}
-#logo #site-title a:focus, a:hover, a:active, {
-  background: rgba(255, 255, 255, 0.25);
-}
-
-
-
-
-/* ______ nav (with portfoliopress break points) ______ */
-.primary-navigation a {
-  font-size: 16px;
-  line-height: 16px;
-  letter-spacing: .05em;
-  margin: 14px 0;
-}
-
-@media screen and (min-width: 780px) {
-  .primary-navigation {
-    margin-top: 4px;
-    margin-right: -12px;
-  }
-
-  .single-film_music .primary-navigation ul li.current-menu-item > a, .primary-navigation ul > li:hover > a,
-  .primary-navigation ul li.current_page_parent > a, .primary-navigation ul > li:hover > a {
-    border-radius: 2px;
-    color: #fff;
-    background: rgba(255, 255, 255, 0.25);
-    transition: 0.07s ease-in;
-}
-
-@media screen and (max-width: 779px) {
-  .clear-menu .menu-toggle {
-    position: absolute;
-    top: 45px;
-    right: 20px;
-    color: #fff;
-    font-size: 18px;
-  }
-
-  .primary-navigation .nav-menu {
-      border-bottom: none;
-      margin-bottom: -14px;
-  }
-}
-
-
-
-
-/* ______ main ______ */
-#main {
-  background: #FBFAF9;
-}
-
-
-@media (min-width: 768px) {
-  .col-width {
-      padding: 0 40px;
-  }
-}
-
-.entry-header {
-  border-bottom: none;
-  box-shadow: 0 0 0 0 #fff;
-  margin-bottom: 20px;
-}
-
-h1.entry-title a{
-  color: #483C46;
-}
-a {
-  color: #466D94;
-}
-
-.entry-meta {
-  font-size: 15px;
-  line-height: 30px;
-}
-
-#content .entry-title {
-  font-size: 30px;
-  letter-spacing: .002em;
-  font-family: inherit;
-}
-
-#content .entry-title a {
-  font-size: 28px;
-}
-
-#content p {
-  font-size: 16px;
-  color: #333;
-  letter-spacing: .0001em;
-}
-
-
-
-/* ______ art & writing ______ */
-.blog #content article {
-    margin-bottom: 60px;
-}
-.blog #content p {
-  padding-bottom: 50px;
-}
-.blog #content article:after {
-     display: block;
-    width: 100%;
-    height: 1px;
-    background: #ddd;
-    box-shadow: 0 1px 0 0 #fff;
-    content: "";
-}
-
-
-/*footer.entry-meta:after {
-    display: block;
-    width: 100%;
-    height: 1px;
-    background: #ddd;
-    box-shadow: 0 1px 0 0 #fff;
-    content: "";
-}
-footer.entry-meta:before {
-    display: none;
-}*/
-
-
-
-/* ______ guest artist ______ */
-.single-guest_artist #main{
-  background: #fff;
-}
-.single-guest_artist #colophon{
-  background: #FBFAF9;
-}
-.single-guest_artist #content {
-  width: 100%;
-}
-.single-guest_artist h1 {
-  color: #525151;
-}
-.single-guest_artist #content p{
-  width: 75%;
-}
-.single-guest_artist .footer-widget-1 .widget-container h3{
-  display: none;
-}
-.single-guest_artist .widget-container .textwidget {
-  background: gray;
-}
-
-.single-guest_artist .search-field {
-  max-width: 216px;
-}
-
-
-
-
-/* ______ shop ______ */
-.post-type-archive-shop_item #content {
-  width: 100%;
-  float: none;
-}
-.post-type-archive-shop_item article {
-  background: white;
-  padding: 40px;
-}
-
-#content article:last-child {
-    border-bottom: none;
-    padding-bottom: 0;
-}
-.post-type-archive-shop_item h4 {
-  font-family: 'Crimson Text', serif;
-}
-.post-type-archive-shop_item .search-field {
-  max-width: 216px;
-}
-
-
-
-@media (min-width: 768px) {
-  .post-type-archive-shop_item article div {
-    width: 33.33%;
-    float: left;
-    padding-right: 3em;
-  }
-
-  .post-type-archive-shop_item article div:last-child {
-    padding-right: 0;
-  }
-}
-
-
-@media (max-width: 767px) {
-  .post-type-archive-shop_item article div {
-    text-align: center;
-  }
-  .post-type-archive-shop_item article div img {
-    padding-bottom: 30px;
-
-  }
-  .post-type-archive-shop_item article div:last-child {
-    text-align: left;
-  }
-  .shop-info h4 {
-    font-family: 'Crimson Text', serif;
-    font-size: 16px;
-    margin-bottom: 0;
-  }
-  #content .shop-item .shop-info p:last-child {
-    color: red;
-  }
-}
-
-@media (max-width: 500px) {
-  .post-type-archive-shop_item article {
-    background: white;
-    padding: 20px;
-  }
-  .post-type-archive-shop_item article div img {
-    padding-bottom: 20px;
-  }
-}
-
-
-
-
-/* ______ sidebars ______ */
-#sidebar {
-  margin-top: 3px;
-}
-.widget-container {
-    margin-bottom: 40px;
-}
-
-#sidebar .widget-container h3 {
-  box-shadow: none;
-  box-shadow: 0 1px 0 0 #fff;
-  border-bottom: 3px solid #DDD;
-  color: #444;
-  margin-bottom: 14px;
-}
-
-.widget-container p {
-  font-size: 15px;
-  margin-bottom: 10px;
-}
-
-.widget-container ul li {
-  font-size: 15px;
-  margin-bottom: 10px;
-}
-
-#colophon {
-  border-top: none;
-}
-
-#colophon .block.footer-widget-1,
-#colophon .block.footer-widget-2 {
-  width: 75%;
-}
-#colophon .block.footer-widget-1 .widget-container {
-  font-size: 16px;
-}
-
-
-
-
-/* ______ search results ______ */
-.search-results h1 {
-  font-size: 1.5em;
-  letter-spacing: .015em;
-  color: #7891A9;
-}
-
-
-
-
-
-
-
-
-
-
-
-/* ______ footer ______ */
-/**, *:before, *:after {
-    box-sizing: content-box;
-}*/
-
-
-
-
 /* ______ front page ______ */
 .home #branding {
   display: none;
@@ -551,3 +236,362 @@ a:active .bot-right {
   }
 }
 /* ______ front page end ______ */
+
+
+
+
+/* ______ branding ______ */
+#branding {
+  background: #787E84;
+  background: #6E8FAF;
+  background: #7891A9;
+}
+@media (min-width: 768px) {
+  #branding .col-width {
+      padding: 0 40px;
+  }
+}
+
+#logo {
+  padding-right: 0;
+}
+#logo #site-title a {
+  font-family: 'Crimson Text', serif;
+  font-size: 30px;
+  line-height: 54px;
+  letter-spacing: .025em;
+  padding: 0 8px;
+  margin-left: -8px;
+}
+#logo #site-title a:focus, a:hover, a:active, {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+
+
+
+/* ______ nav (with portfoliopress break points) ______ */
+.primary-navigation a {
+  font-size: 16px;
+  line-height: 16px;
+  letter-spacing: .05em;
+  margin: 14px 0;
+}
+
+@media screen and (min-width: 780px) {
+  .primary-navigation {
+    margin-top: 4px;
+    margin-right: -12px;
+  }
+
+  .single-film_music .primary-navigation ul li.current-menu-item > a,
+  .primary-navigation ul > li:hover > a {
+    border-radius: 2px;
+    color: #fff;
+    background: rgba(255, 255, 255, 0.25);
+    transition: 0.07s ease-in;
+}
+
+@media screen and (max-width: 779px) {
+  .clear-menu .menu-toggle {
+    position: absolute;
+    top: 45px;
+    right: 20px;
+    color: #fff;
+    font-size: 18px;
+  }
+
+  .primary-navigation .nav-menu {
+      border-bottom: none;
+      margin-bottom: -14px;
+  }
+}
+/*from lisa for singles current page*/
+/*@media screen and (min-width: 780px) {
+  .primary-navigation {
+    margin-top: 4px;
+    margin-right: -12px;
+  }
+
+  .single-film_music .primary-navigation ul li.current-menu-item > a,
+  .primary-navigation ul > li:hover > a,
+  .primary-navigation ul li.current_page_parent > a,
+  .primary-navigation ul > li:hover > a {
+    border-radius: 2px;
+    color: #fff;
+    background: rgba(255, 255, 255, 0.25);
+    transition: 0.07s ease-in;
+  }
+}
+*/
+
+/*.primary-navigation ul li.current_page_parent > a {
+  background-color: red;
+}
+*/
+
+/* ______ main ______ */
+#main {
+  background: #FBFAF9;
+}
+
+
+@media (min-width: 768px) {
+  .col-width {
+      padding: 0 40px;
+  }
+}
+
+.entry-header {
+  border-bottom: none;
+  box-shadow: 0 0 0 0 #fff;
+  margin-bottom: 20px;
+}
+
+h1.entry-title a{
+  color: #483C46;
+}
+a {
+  color: #466D94;
+}
+
+.entry-meta {
+  font-size: 15px;
+  line-height: 30px;
+}
+
+#content .entry-title {
+  font-size: 30px;
+  letter-spacing: .002em;
+  font-family: inherit;
+}
+
+#content .entry-title a {
+  font-size: 28px;
+}
+
+#content p {
+  font-size: 16px;
+  font-size: 1.025em;
+  color: #333;
+  letter-spacing: .0001em;
+}
+
+.meta-nav.continue p a {
+      white-space: nowrap;
+}
+
+
+
+/* ______ art & writing ______ */
+.blog #content article {
+    margin-bottom: 60px;
+}
+.blog #content p {
+  padding-bottom: 50px;
+}
+.blog #content article:after {
+     display: block;
+    width: 100%;
+    height: 1px;
+    background: #ddd;
+    box-shadow: 0 1px 0 0 #fff;
+    content: "";
+}
+
+
+
+
+
+/* ______ guest artist ______ */
+.single-guest_artist #main{
+  background: #fff;
+}
+.single-guest_artist #colophon{
+  background: #FBFAF9;
+}
+.single-guest_artist #content {
+  width: 100%;
+}
+.single-guest_artist h1 {
+  color: #525151;
+}
+.single-guest_artist #content p{
+  width: 75%;
+}
+.single-guest_artist .footer-widget-1 .widget-container h3{
+  display: none;
+}
+.single-guest_artist .widget-container .textwidget {
+  /*background: gray;*/
+}
+
+.single-guest_artist .search-field {
+  max-width: 216px;
+}
+
+.single-guest_artist .widget-container h3 {
+    max-width: 300px;
+}
+
+
+
+
+
+/* ______ shop ______ */
+.post-type-archive-shop_item #content {
+  width: 100%;
+  float: none;
+}
+.post-type-archive-shop_item article {
+  background: white;
+  padding: 40px;
+}
+
+#content article:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+.post-type-archive-shop_item h4 {
+  font-family: 'Crimson Text', serif;
+}
+.post-type-archive-shop_item .search-field {
+  max-width: 216px;
+}
+
+
+@media (min-width: 768px) {
+  .post-type-archive-shop_item article div {
+    width: 33.33%;
+    float: left;
+    padding-right: 3em;
+  }
+
+  .post-type-archive-shop_item article div:last-child {
+    padding-right: 0;
+  }
+}
+
+
+@media (max-width: 767px) {
+  .post-type-archive-shop_item article div {
+    text-align: center;
+  }
+  .post-type-archive-shop_item article div img {
+    padding-bottom: 30px;
+
+  }
+  .post-type-archive-shop_item article div:last-child {
+    text-align: left;
+  }
+  .shop-info h4 {
+    font-family: 'Crimson Text', serif;
+    font-size: 16px;
+    margin-bottom: 0;
+  }
+  #content .shop-item .shop-info p:last-child {
+    color: red;
+  }
+}
+
+
+@media (max-width: 500px) {
+  .post-type-archive-shop_item article {
+    background: white;
+    padding: 20px;
+  }
+  .post-type-archive-shop_item article div img {
+    padding-bottom: 20px;
+  }
+}
+
+
+
+
+
+/* ______ sidebars ______ */
+#sidebar {
+  margin-top: 3px;
+}
+.widget-container {
+    margin-bottom: 40px;
+}
+
+#sidebar .widget-container h3 {
+  box-shadow: none;
+  box-shadow: 0 1px 0 0 #fff;
+  border-bottom: 3px solid #DDD;
+  color: #444;
+  margin-bottom: 14px;
+}
+
+.widget-container p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.widget-container ul li {
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+#colophon {
+  border-top: none;
+}
+
+#colophon .block.footer-widget-1,
+#colophon .block.footer-widget-2 {
+  width: 75%;
+}
+#colophon .block.footer-widget-1 .widget-container {
+  font-size: 16px;
+}
+
+
+
+
+
+/* ______ footer ______ */
+#footer-widgets {
+    margin-bottom: 20px;
+    border-bottom: none;
+    margin-top: 40px;
+}
+#colophon {
+    /*display: block;*/
+     margin: 0;
+    /*border-top: 1px solid #ddd;
+    background: #fff;*/
+}
+@media (min-width: 768px) {
+  #colophon {
+      margin: 0;
+      padding: 0;
+      border-top: 1px solid #F9F7F7;
+      background: #fff;
+  }
+}
+.copyright {
+  font-size: 14px;
+  line-height: 5px;
+
+}
+.copyright p:last-child{
+  padding-bottom: 20px;
+}
+
+
+
+
+/* ______ search results ______ */
+.search-results h1 {
+  font-size: 1.5em;
+  letter-spacing: .015em;
+  color: #7891A9;
+}
+
+
+
+
+
+
