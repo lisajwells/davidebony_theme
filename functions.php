@@ -146,37 +146,6 @@ function davidebony_get_latest_guest_link(){
     // return $latest_link_html;
 }
 
-// Mark (highlight) custom post type parent (archive) as active item in Wordpress Navigation
-  // add_action('nav_menu_css_class', 'add_current_nav_class', 10, 2 );
-
-  //   function add_current_nav_class($classes, $item) {
-
-  //       // Getting the current post details
-  //       global $post;
-
-  //       // Get post ID, if nothing found set to NULL
-  //       $id = ( isset( $post->ID ) ? get_the_ID() : NULL );
-
-  //       // Checking if post ID exist...
-  //       if (isset( $id )){
-  //           // Getting the post type of the current post
-  //           $current_post_type = get_post_type_object(get_post_type($post->ID));
-  //           $current_post_type_slug = $current_post_type->rewrite['slug'];
-
-  //           // Getting the URL of the menu item
-  //           $menu_slug = strtolower(trim($item->url));
-
-  //           // If the menu item URL contains the current post types slug add the current-menu-item class
-  //           if (strpos($menu_slug,$current_post_type_slug) !== false) {
-
-  //              $classes[] = 'current-menu-item';
-
-  //           }
-  //       }
-  //       // Return the corrected set of classes to be added to the menu item
-  //       return $classes;
-  //   }
-
 /*
  * Customize Menu Item Classes
  * @author Bill Erickson
@@ -201,3 +170,19 @@ function davidebony_menu_item_classes( $classes, $item, $args ) {
     return array_unique( $classes );
 }
 add_filter( 'nav_menu_css_class', 'davidebony_menu_item_classes', 10, 3 );
+
+// exclude envira gallery post type from search results
+/**
+ *
+ * @author  Joe Sexton <joe@webtipblog.com>
+ */
+add_action( 'init', 'davidebony_update_my_custom_type', 99 );
+function davidebony_update_my_custom_type() {
+    global $wp_post_types;
+
+    if ( post_type_exists( 'envira' ) ) {
+
+        // exclude from search results
+        $wp_post_types['envira']->exclude_from_search = true;
+    }
+}
