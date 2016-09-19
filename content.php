@@ -28,11 +28,11 @@
 
 			<div class="publication">
 				<h4>Published in <?php the_field('publication'); ?></h4>
-				<!--<p><a href="<?php the_field('url_of_link'); ?>" target="_blank">View article <?php the_field('url_of_link'); ?></a></p>-->
+				<!--<p><a href="<?php the_field('url_of_link'); ?>" target="_blank">Visit publication website <?php the_field('url_of_link'); ?></a></p>-->
 			</div>
 		<?php }?>
 
-		<?php the_content( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'portfolio-press' ) ); ?>
+		<?php the_content( __( 'continue reading <span class="meta-nav continue">&#x3e;</span>', 'portfolio-press' ) ); ?>
 		<?php wp_link_pages( array( 'before' => '<div class="page-link">' . __( 'Pages:', 'portfolio-press' ), 'after' => '</div>' ) ); ?>
 	</div><!-- .entry-content -->
 

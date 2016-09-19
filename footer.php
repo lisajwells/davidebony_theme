@@ -35,8 +35,10 @@
 		</div><!-- #footer-widgets  -->
 
     <?php endif; ?>
-    
-    <p>&copy; <?php echo date('Y') ?> David Ebony. All rights reserved.</p>
+    <div class="copyright">
+	    <p>&copy; <?php echo date('Y') ?> David Ebony. All rights reserved.</p>
+	    <!-- <a href="http://wagnerdigitalworks.com/"><p class="copyright">website by wagnerdigitalworks.com</p></a> -->
+	 </div>
     
 
 
