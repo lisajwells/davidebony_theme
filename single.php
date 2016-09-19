@@ -32,7 +32,7 @@ get_header(); ?>
 									<!-- <p><a href="<?php the_field('url_of_link') ?>" target="_blank">Visit publication website</a></p> -->
 								</div>
 						<?php }?>
-						
+
 						<?php the_content(); ?>
 
 
@@ -46,8 +46,8 @@ get_header(); ?>
 					<?php //portfoliopress_post_nav(); ?>
 
 				<div class="prev-next-post">
-	 				<span class="prev-post"><?php previous_post_link(); ?></span>
-					<span class="next-post"><?php next_post_link(); ?></span>
+	 				<span class="prev-post"><?php previous_post_link('%link'); ?></span>
+					<span class="next-post"><?php next_post_link('%link'); ?></span>
 				</div>
 
 				<div class="publication-website">
@@ -58,7 +58,7 @@ get_header(); ?>
 								<p><a href="<?php the_field('url_of_link') ?>" target="_blank">visit publication website</a></p>
 							</div>
 					<?php }?>
-				</div>				
+				</div>
 
 				<?php if ( comments_open() ) {
 					comments_template( '', true );
