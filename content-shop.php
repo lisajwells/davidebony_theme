@@ -26,9 +26,15 @@
 
 			if( get_field('sold_out') )	{
 			    echo "<p>SOLD OUT</p>";
+
 			} else {
-			    echo "<p><a href='#'>BUY</a></p>";
-			    echo $paypal;
+
+			// mailto link here until buy button below is ready
+			    echo "<p><a href='mailto:w.sokhi@gmail.com'>Email To Buy</a></p>";
+
+			// commented for now; will replace mailto when ready
+			//    echo "<p><a href='#'>BUY</a></p>";
+			//    echo $paypal;
 			}
 		?>
 	</div> <!-- /shop-info -->

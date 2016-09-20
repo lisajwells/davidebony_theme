@@ -1,0 +1,103 @@
+/* ______ envira gallery ______ */
+
+/*#envira-gallery-374 .envirabox-skin { padding: 0 !important; }*/
+/*#envira-gallery-374 .envirabox-overlay { background: rgba(245,245,240,0.8) !important; }*/
+
+.envirabox-skin {
+    padding: 2px !important;
+}
+
+.envirabox-opened .envirabox-skin {
+    -webkit-box-shadow: none !important;
+    -moz-box-shadow: none !important;
+    box-shadow: none !important;
+}
+
+.envirabox-title-outside-wrap {
+    color: #888 !important;
+    font-family: helvetica !important;
+}
+
+.envirabox-title.envirabox-title-outside-wrap {
+  position: fixed;
+  left: 10px;
+  bottom: 10px;
+}
+
+/*i don't know why, but the white overlay in the slide nav was coming from #logo #site-title a:focus, a:hover*/
+/*a.envirabox-nav.envirabox-next.envirabox-arrows-inside:link,
+a.envirabox-nav.envirabox-prev.envirabox-arrows-inside:link {
+    background: none;
+}
+a.envirabox-nav.envirabox-next.envirabox-arrows-inside:visited,
+a.envirabox-nav.envirabox-prev.envirabox-arrows-inside:visited {
+    background: none;
+}
+a.envirabox-nav.envirabox-next.envirabox-arrows-inside:focus,
+a.envirabox-nav.envirabox-prev.envirabox-arrows-inside:focus {
+    background: none;
+}
+a.envirabox-nav.envirabox-next.envirabox-arrows-inside:hover,
+a.envirabox-nav.envirabox-prev.envirabox-arrows-inside:hover {
+    background: none;
+}
+a.envirabox-nav.envirabox-next.envirabox-arrows-inside:active,
+a.envirabox-nav.envirabox-prev.envirabox-arrows-inside:active {
+    background: none;
+}
+*/a.envirabox-nav.envirabox-next.envirabox-arrows-outside:link,
+a.envirabox-nav.envirabox-prev.envirabox-arrows-outside:link {
+    background: none;
+}
+a.envirabox-nav.envirabox-next.envirabox-arrows-outside:visited,
+a.envirabox-nav.envirabox-prev.envirabox-arrows-outside:visited {
+    background: none;
+}
+a.envirabox-nav.envirabox-next.envirabox-arrows-outside:focus,
+a.envirabox-nav.envirabox-prev.envirabox-arrows-outside:focus {
+    background: none;
+}
+a.envirabox-nav.envirabox-next.envirabox-arrows-outside:hover,
+a.envirabox-nav.envirabox-prev.envirabox-arrows-outside:hover {
+    background: none;
+}
+a.envirabox-nav.envirabox-next.envirabox-arrows-outside:active,
+a.envirabox-nav.envirabox-prev.envirabox-arrows-outside:active {
+    background: none;
+}
+
+
+/* Move the close icon */
+.envirabox-close {
+  position: fixed !important;
+  top: 10px !important;
+  right: 10px !important;
+}
+
+/* Move the prev/next navigation arrows and make them always visible */
+a.envirabox-nav span {
+  visibility: visible !important;
+  position: fixed !important;
+  bottom: 10px !important;
+  top: auto !important;
+}
+.envirabox-prev, .envirabox-next {
+  position: fixed !important;
+  width: 40% !important;
+}
+
+/* Make sure the prev/next nav arrows are consistently positioned regardless of inside/outside configuration */
+.envirabox-prev {
+  left: 0 !important;
+  bottom: 0 !important;
+}
+.envirabox-next {
+  right: 0 !important;
+  bottom: 0 !important;
+}
+
+a.envirabox-prev span {
+  left: auto !important;
+    right: 50px !important;
+  }
+
