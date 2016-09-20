@@ -712,12 +712,16 @@ div#custom-post-type-recent-posts-2 ul li:first-of-type {
 .envirabox-title-outside-wrap {
     color: #888 !important;
     font-family: helvetica !important;
-    font size: 8px !important;
-    text-align: center;
+}
+
+.envirabox-title.envirabox-title-outside-wrap {
+  position: fixed;
+  left: 10px;
+  bottom: 10px;
 }
 
 /*i don't know why, but the white overlay in the slide nav was coming from #logo #site-title a:focus, a:hover*/
-a.envirabox-nav.envirabox-next.envirabox-arrows-inside:link,
+/*a.envirabox-nav.envirabox-next.envirabox-arrows-inside:link,
 a.envirabox-nav.envirabox-prev.envirabox-arrows-inside:link {
     background: none;
 }
@@ -737,7 +741,7 @@ a.envirabox-nav.envirabox-next.envirabox-arrows-inside:active,
 a.envirabox-nav.envirabox-prev.envirabox-arrows-inside:active {
     background: none;
 }
-a.envirabox-nav.envirabox-next.envirabox-arrows-outside:link,
+*/a.envirabox-nav.envirabox-next.envirabox-arrows-outside:link,
 a.envirabox-nav.envirabox-prev.envirabox-arrows-outside:link {
     background: none;
 }
@@ -759,15 +763,39 @@ a.envirabox-nav.envirabox-prev.envirabox-arrows-outside:active {
 }
 
 
-a.envirabox-nav.envirabox-prev.envirabox-arrows-outside {
-  position: absolute;
-    left: -50px;
-}
-a.envirabox-nav.envirabox-next.envirabox-arrows-outside {
-    right: -50px;
+/* Move the close icon */
+.envirabox-close {
+  position: fixed !important;
+  top: 10px !important;
+  right: 10px !important;
 }
 
-.envirabox-nav span { visibility: visible !important; }
+/* Move the prev/next navigation arrows and make them always visible */
+a.envirabox-nav span {
+  visibility: visible !important;
+  position: fixed !important;
+  bottom: 10px !important;
+  top: auto !important;
+}
+.envirabox-prev, .envirabox-next {
+  position: fixed !important;
+  width: 40% !important;
+}
+
+/* Make sure the prev/next nav arrows are consistently positioned regardless of inside/outside configuration */
+.envirabox-prev {
+  left: 0 !important;
+  bottom: 0 !important;
+}
+.envirabox-next {
+  right: 0 !important;
+  bottom: 0 !important;
+}
+
+a.envirabox-prev span {
+  left: auto !important;
+    right: 50px !important;
+  }
 
 
 /*body.single-Guest_artist {
