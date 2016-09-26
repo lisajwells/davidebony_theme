@@ -76,7 +76,7 @@
 			} else {
 
 			// mailto link here until buy button below is ready
-			    echo "<p><a href='mailto:w.sokhi@gmail.com'>Email To Buy</a></p>";
+			    echo "<p><a href='mailto:davidebony3@gmail.com'>Email To Buy</a></p>";
 
 			// commented for now; will replace mailto when ready
 			//    echo "<p><a href='#'>BUY</a></p>";
