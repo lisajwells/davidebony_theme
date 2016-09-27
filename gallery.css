@@ -1,0 +1,65 @@
+/* ______ envira gallery ______ */
+
+/*#envira-gallery-374 .envirabox-skin { padding: 0 !important; }*/
+/*#envira-gallery-374 .envirabox-overlay { background: rgba(245,245,240,0.8) !important; }*/
+
+.envirabox-skin {
+    padding: 2px !important;
+}
+
+.envirabox-opened .envirabox-skin {
+    -webkit-box-shadow: none !important;
+    -moz-box-shadow: none !important;
+    box-shadow: none !important;
+}
+
+.envirabox-title-outside-wrap {
+    color: #888 !important;
+    font-family: helvetica !important;
+}
+
+.envirabox-title.envirabox-title-outside-wrap {
+  bottom: 10px;
+  left: 10px;
+  position: fixed;
+}
+
+/* Move the close icon */
+.envirabox-close {
+  position: fixed !important;
+  right: 10px !important;
+  top: 10px !important;
+}
+
+/* Move the prev/next navigation arrows and make them always visible */
+.envirabox-prev, .envirabox-next {
+  position: fixed !important;
+    bottom: 0 !important;
+    height: 60px !important;
+    top: auto !important;
+    width: 60px !important;
+    background-color: pink !important;
+}
+.envirabox-next {
+    background-color: blue !important;
+
+}
+a.envirabox-nav span {
+  bottom: 10px !important;
+  position: fixed !important;
+  top: auto !important;
+  visibility: visible !important;
+}
+
+.envirabox-prev.envirabox-arrows-outside {
+  right: 60px !important;
+  left: auto !important;
+}
+.envirabox-next.envirabox-arrows-outside {
+  right: 0 !important;
+}
+
+a.envirabox-prev span {
+  left: auto !important;
+  right: 70px !important;
+}

@@ -9,7 +9,7 @@ License: GNU General Public License
 License URI: license.txt
 Tags: two-columns, left-sidebar, right-sidebar, flexible-width, custom-menu, full-width-template, microformats, post-formats, rtl-language-support, theme-options, translation-ready
 Text Domain: portfolio-press
-Domain Path: /languages 
+Domain Path: /languages
 Template: portfolio-press
 */
 
@@ -309,7 +309,7 @@ body{
     margin-right: -12px;
   }
 
-  .single-film_music .primary-navigation ul li.current-menu-item > a, 
+  .single-film_music .primary-navigation ul li.current-menu-item > a,
   .primary-navigation ul > li:hover > a {
     border-radius: 2px;
     color: #fff;
@@ -397,7 +397,7 @@ a {
   height: 1px;
   background: #ddd;
   box-shadow: 0 1px 0 0 #fff;
-  content: ""; 
+  content: "";
   margin-bottom: 60px;
   margin-top: 60px;
 }
@@ -407,18 +407,18 @@ a {
   float: left;
 }
  .prev-post a:before {
-  content: "previous: "; 
+  content: "previous: ";
   font-weight: 400;
-} 
+}
 .next-post a {
   display: inline-block;
   max-width: 45%;
   float: right;
 }
  .next-post a:before {
-  content: "next: "; 
+  content: "next: ";
   font-weight: 400;
-} 
+}
 
 .publication-website {
   display: inline-block;
@@ -435,7 +435,7 @@ a {
     height: 1px;
     background: #ddd;
     box-shadow: 0 1px 0 0 #fff;
-    content: ""; 
+    content: "";
     margin-top: 90px;
   }
 }
@@ -469,7 +469,7 @@ a {
 }
 .single-guest_artist .widget-container {
   max-width: 300px;
-} 
+}
 div#custom-post-type-recent-posts-2 ul li:first-of-type {
     display: none;
 }
@@ -530,7 +530,7 @@ div#custom-post-type-recent-posts-2 ul li:first-of-type {
 @media (max-width: 779px) {
   .post-type-archive-shop_item article {
     padding: 20px;
-  }  
+  }
   .post-type-archive-shop_item article .shop-image {
     width: 50%;
     float: left;
@@ -543,7 +543,7 @@ div#custom-post-type-recent-posts-2 ul li:first-of-type {
     padding-right: 0;
     padding-left: 20px;
     padding-bottom: 20px;
-  }  
+  }
   .post-type-archive-shop_item article .shop-description {
     width: 100%;
     float: left;
@@ -568,7 +568,7 @@ div#custom-post-type-recent-posts-2 ul li:first-of-type {
   .post-type-archive-shop_item article .shop-info {
     padding-left: 0;
     padding-bottom: 20px;
-  }  
+  }
 }
 
 
@@ -616,7 +616,7 @@ div#custom-post-type-recent-posts-2 ul li:first-of-type {
   font-size: 16px;
 }
 #footer-widgets .block {
-  padding: 0; 
+  padding: 0;
 }
 
 @media (max-width: 680px) {
@@ -716,85 +716,47 @@ div#custom-post-type-recent-posts-2 ul li:first-of-type {
 }
 
 .envirabox-title.envirabox-title-outside-wrap {
-  position: fixed;
-  left: 10px;
   bottom: 10px;
+  left: 10px;
+  position: fixed;
 }
-
-/*i don't know why, but the white overlay in the slide nav was coming from #logo #site-title a:focus, a:hover*/
-/*a.envirabox-nav.envirabox-next.envirabox-arrows-inside:link,
-a.envirabox-nav.envirabox-prev.envirabox-arrows-inside:link {
-    background: none;
-}
-a.envirabox-nav.envirabox-next.envirabox-arrows-inside:visited,
-a.envirabox-nav.envirabox-prev.envirabox-arrows-inside:visited {
-    background: none;
-}
-a.envirabox-nav.envirabox-next.envirabox-arrows-inside:focus,
-a.envirabox-nav.envirabox-prev.envirabox-arrows-inside:focus {
-    background: none;
-}
-a.envirabox-nav.envirabox-next.envirabox-arrows-inside:hover,
-a.envirabox-nav.envirabox-prev.envirabox-arrows-inside:hover {
-    background: none;
-}
-a.envirabox-nav.envirabox-next.envirabox-arrows-inside:active,
-a.envirabox-nav.envirabox-prev.envirabox-arrows-inside:active {
-    background: none;
-}
-*/a.envirabox-nav.envirabox-next.envirabox-arrows-outside:link,
-a.envirabox-nav.envirabox-prev.envirabox-arrows-outside:link {
-    background: none;
-}
-a.envirabox-nav.envirabox-next.envirabox-arrows-outside:visited,
-a.envirabox-nav.envirabox-prev.envirabox-arrows-outside:visited {
-    background: none;
-}
-a.envirabox-nav.envirabox-next.envirabox-arrows-outside:focus,
-a.envirabox-nav.envirabox-prev.envirabox-arrows-outside:focus {
-    background: none;
-}
-a.envirabox-nav.envirabox-next.envirabox-arrows-outside:hover,
-a.envirabox-nav.envirabox-prev.envirabox-arrows-outside:hover {
-    background: none;
-}
-a.envirabox-nav.envirabox-next.envirabox-arrows-outside:active,
-a.envirabox-nav.envirabox-prev.envirabox-arrows-outside:active {
-    background: none;
-}
-
 
 /* Move the close icon */
 .envirabox-close {
   position: fixed !important;
-  top: 10px !important;
   right: 10px !important;
+  top: 10px !important;
 }
 
 /* Move the prev/next navigation arrows and make them always visible */
-a.envirabox-nav span {
-  visibility: visible !important;
-  position: fixed !important;
-  bottom: 10px !important;
-  top: auto !important;
-}
 .envirabox-prev, .envirabox-next {
   position: fixed !important;
-  width: 40% !important;
-}
-
-/* Make sure the prev/next nav arrows are consistently positioned regardless of inside/outside configuration */
-.envirabox-prev {
-  left: 0 !important;
-  bottom: 0 !important;
+    bottom: 0 !important;
+    height: 60px !important;
+    top: auto !important;
+    width: 60px !important;
+    background-color: pink !important;
 }
 .envirabox-next {
+    background-color: blue !important;
+
+}
+a.envirabox-nav span {
+  bottom: 10px !important;
+  position: fixed !important;
+  top: auto !important;
+  visibility: visible !important;
+}
+
+.envirabox-prev.envirabox-arrows-outside {
+  right: 60px !important;
+  left: auto !important;
+}
+.envirabox-next.envirabox-arrows-outside {
   right: 0 !important;
-  bottom: 0 !important;
 }
 
 a.envirabox-prev span {
   left: auto !important;
-    right: 50px !important;
-  }
-
+  right: 70px !important;
+}
